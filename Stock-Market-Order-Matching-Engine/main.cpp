@@ -29,10 +29,11 @@ int main(){
 
     Order order(id, price, quantity, isBuy, timestamp);
 
-    cout<< "\nOrder Details\n";
-    order.print();
-
     OrderBook book;
+
+    book.addOrder(order);
+
+    cout << "Order added successfully!" << endl;
 
     return 0;
 }

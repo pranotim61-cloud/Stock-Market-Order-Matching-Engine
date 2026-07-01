@@ -5,8 +5,9 @@
 
 class OrderBook{
     private:
-        std::vector<Order> order;
+        std::vector<Order> orders;
 
     public:
         OrderBook();
+        void addOrder(const Order& order);
 };
