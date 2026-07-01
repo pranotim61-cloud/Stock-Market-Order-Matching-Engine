@@ -37,3 +37,7 @@ bool Order::getIsBuy() const{
 int Order::getTimestamp() const{
     return timestamp;
 }
+
+void Order::setQuantity(int quantity){
+    this->quantity = quantity;
+}
