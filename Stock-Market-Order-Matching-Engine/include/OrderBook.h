@@ -2,12 +2,15 @@
 
 #include<vector>
 #include"Order.h"
+using namespace std;
 
 class OrderBook{
     private:
-        std::vector<Order> orders;
+        vector<Order> buyOrders;
+        vector<Order> sellOrders;
 
     public:
         OrderBook();
         void addOrder(const Order& order);
+        void matchOrders();
 };

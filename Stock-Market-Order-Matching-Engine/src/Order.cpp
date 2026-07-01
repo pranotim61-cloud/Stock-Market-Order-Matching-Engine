@@ -18,26 +18,22 @@ void Order::print(){
     cout<< "timestamp : "<< timestamp<< endl;
 }
 
-int Order::getId(){
+int Order::getId() const{
     return id;
 }
 
-double Order::getPrice()
-{
+double Order::getPrice() const{
     return price;
 }
 
-int Order::getQuantity()
-{
+int Order::getQuantity() const{
     return quantity;
 }
 
-bool Order::getIsBuy()
-{
+bool Order::getIsBuy() const{
     return isBuy;
 }
 
-int Order::getTimestamp()
-{
+int Order::getTimestamp() const{
     return timestamp;
 }

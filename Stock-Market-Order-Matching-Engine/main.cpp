@@ -32,6 +32,7 @@ int main(){
     OrderBook book;
 
     book.addOrder(order);
+    book.matchOrders();
 
     cout << "Order added successfully!" << endl;
 
