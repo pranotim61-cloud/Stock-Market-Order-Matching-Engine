@@ -13,7 +13,7 @@ Order::Order(int id, double price, int quantity, bool isBuy, int timestamp){
 void Order::print(){
     cout<< "id : "<< id<< endl;
     cout<< "price : "<< price<< endl;
-    cout<< "isBuy : "<< isBuy<< endl;
+    cout<< "Type: "<< (isBuy ? "BUY" : "SELL") << endl;
     cout<< "quantity : "<< quantity<< endl;
     cout<< "timestamp : "<< timestamp<< endl;
 }
