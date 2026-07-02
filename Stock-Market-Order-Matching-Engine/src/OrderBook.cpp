@@ -26,6 +26,10 @@ void OrderBook::matchOrders(){
     if (buy.getPrice() >= sell.getPrice()){
         int tradedQuantity = std::min(buy.getQuantity(), sell.getQuantity());
 
+        Trade trade(buy.getId(), sell.getId(), sell.getPrice(),tradedQuantity);
+        tradeHistory.push_back(trade);
+        trade.print();
+
         buy.setQuantity(buy.getQuantity() - tradedQuantity);
         sell.setQuantity(sell.getQuantity() - tradedQuantity);
 
